@@ -1,0 +1,6 @@
+{
+  "grid": "SCDT sweep \u03c3 coordinates, mapped to x0 by the validation-only calibration",
+  "points": 35,
+  "gt_sigma_50_same_grid": 0.3773789919823002,
+  "gt_sigma_50_same_grid_original_rule": 0.3773789919823002
+}

@@ -1,0 +1,25 @@
+{
+  "status": "exploratory post-hoc evaluation; not a new BO-selected model",
+  "training_only_reference": {
+    "threshold": 0.9228072729556681,
+    "training_max": 0.9028072729556681,
+    "margin": 0.02,
+    "window_samples": 320,
+    "step_samples": 32,
+    "first_lag": 8,
+    "last_lag": 40,
+    "sustain_windows": 5
+  },
+  "heldout_gt_normal_periodicity_false_events": 0,
+  "heldout_gt_normal_total": 6,
+  "heldout_rc_normal_old_false_events": 3,
+  "heldout_rc_normal_new_false_events": 3,
+  "heldout_rc_normal_total": 18,
+  "old_rc_sigma_50": 0.3802918949701297,
+  "new_rc_sigma_50": 0.3802918949701297,
+  "old_gt_x0_50": -2.0614999999999997,
+  "new_gt_x0_50": -2.0614999999999997,
+  "rebound_index": 31,
+  "rebound_old_survivors": 21,
+  "rebound_new_survivors": 0
+}

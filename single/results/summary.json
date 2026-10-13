@@ -1,0 +1,26 @@
+{
+  "thresholds": {
+    "rc_sigma_50": 0.3802918949701297,
+    "rc_sigma_50_bootstrap_95_low": 0.3744660889944707,
+    "rc_sigma_50_bootstrap_95_high": 0.38684852749898524,
+    "rc_aligned_x0_50_validation_only": -2.058121126814243,
+    "gt_x0_50": -2.0614999999999997,
+    "gt_sigma_50": 0.37918608837596934,
+    "sigma_threshold_error": 0.0011058065941603745
+  },
+  "normal_validation": {
+    "scaled_statistic_mae": 1.239118171078476,
+    "false_departure_rate": 0.16666666666666666
+  },
+  "best_rc_parameters": {
+    "n_reservoir": 280,
+    "spectral_radius": 0.77,
+    "leakage_rate": 0.28,
+    "input_scaling": 0.57,
+    "static_scaling": 0.13999999999999999,
+    "ridge": 0.0006000000000000003,
+    "density": 0.065,
+    "innovation_scaling": 0.9800000000000001,
+    "seed": 91017
+  }
+}

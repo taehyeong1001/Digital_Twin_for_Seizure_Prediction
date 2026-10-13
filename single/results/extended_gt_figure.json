@@ -1,0 +1,16 @@
+{
+  "original_gt_file": "data/gt_boundary.csv",
+  "extended_gt_file": "data/gt_boundary_extended.csv",
+  "figure": "figures/04_rate_threshold.png",
+  "x0_range": [
+    -2.3,
+    -1.7
+  ],
+  "x0_points": 87,
+  "original_points_reused": 41,
+  "additional_seed_formula": "protocol.arguments.seed + 700000 + grid_index * 1000",
+  "additional_seed_base": 20960924,
+  "gt_ensemble_per_point": 30,
+  "statistical_alignment_caveat": "x0 to sigma is extrapolated beyond the normal-only calibration interval [-2.30, -2.065]",
+  "rc_model_or_sweep_changed": false
+}

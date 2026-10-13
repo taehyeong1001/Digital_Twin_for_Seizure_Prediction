@@ -1,0 +1,182 @@
+{
+  "model_parameters": {
+    "n_reservoir": 280,
+    "spectral_radius": 0.77,
+    "leakage_rate": 0.28,
+    "input_scaling": 0.57,
+    "static_scaling": 0.13999999999999999,
+    "ridge": 0.0006000000000000003,
+    "density": 0.065,
+    "innovation_scaling": 0.9800000000000001,
+    "seed": 91017
+  },
+  "selection": "fixed grid indices from original sweep; reservoir reconstructed with the locked parameters and original training records, without new BO",
+  "event_rule": "proxy <= -0.5 after 5.0 s blanking OR 10 s rolling std below the normal-training minimum for 5 consecutive 1 s steps",
+  "training_record_time_median_range": [
+    0.5913959328824584,
+    0.7182344644090596
+  ],
+  "phases": [
+    {
+      "name": "normal",
+      "grid_index": 7,
+      "sigma": 0.32785964118919847,
+      "survivors": 30,
+      "ensemble": 30,
+      "trough_departures": 0,
+      "low_activity_departures": 0,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_survived": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "selected_trough": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "selected_low_activity": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "clip_low_raw": -6.212365282095854,
+      "clip_high_raw": 5.633336679932511,
+      "clipped_sample_fraction": 0.0,
+      "survivor_time_median_median": 0.6582795387391492,
+      "survivor_time_median_range": [
+        0.6173712238547118,
+        0.6806879954312547
+      ]
+    },
+    {
+      "name": "50% crossing",
+      "grid_index": 16,
+      "sigma": 0.3802918949701297,
+      "survivors": 15,
+      "ensemble": 30,
+      "trough_departures": 15,
+      "low_activity_departures": 9,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "selected_survived": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "selected_trough": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "selected_low_activity": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "clip_low_raw": -6.212365282095854,
+      "clip_high_raw": 5.633336679932511,
+      "clipped_sample_fraction": 0.0005654761904761905,
+      "survivor_time_median_median": 0.5618794573880438,
+      "survivor_time_median_range": [
+        0.5233526041908843,
+        0.5721125305723815
+      ]
+    },
+    {
+      "name": "after collapse",
+      "grid_index": 25,
+      "sigma": 0.432724148751061,
+      "survivors": 0,
+      "ensemble": 30,
+      "trough_departures": 6,
+      "low_activity_departures": 30,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_survived": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "selected_trough": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "selected_low_activity": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "clip_low_raw": -6.212365282095854,
+      "clip_high_raw": 5.633336679932511,
+      "clipped_sample_fraction": 0.9561904761904761,
+      "survivor_time_median_median": null,
+      "survivor_time_median_range": null
+    },
+    {
+      "name": "rebound in extrapolation",
+      "grid_index": 31,
+      "sigma": 0.46767898460501517,
+      "survivors": 21,
+      "ensemble": 30,
+      "trough_departures": 5,
+      "low_activity_departures": 9,
+      "selected_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "selected_survived": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "selected_trough": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "selected_low_activity": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "clip_low_raw": -6.212365282095854,
+      "clip_high_raw": 5.633336679932511,
+      "clipped_sample_fraction": 0.2833556547619048,
+      "survivor_time_median_median": 1.8763250938518845,
+      "survivor_time_median_range": [
+        1.8681583631632144,
+        1.8875269091513156
+      ]
+    }
+  ]
+}

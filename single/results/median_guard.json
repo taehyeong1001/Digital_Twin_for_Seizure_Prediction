@@ -1,0 +1,69 @@
+{
+  "status": "exploratory post-hoc criterion on a locked model; BO not rerun",
+  "event_rule": "old trough OR sustained low std OR 10-s rolling median above training-only ceiling for five consecutive 1-s steps",
+  "median_reference": {
+    "threshold": 0.9108235963001022,
+    "training_min": 0.4625660764193684,
+    "training_max": 0.8361140096533133,
+    "margin_fraction": 0.2,
+    "window_samples": 320,
+    "step_samples": 32,
+    "sustain_windows": 5
+  },
+  "original_rc_sigma_50": 0.3802918949701297,
+  "median_guard_rc_sigma_50": 0.3802918949701297,
+  "original_gt_x0_50": -2.0614999999999997,
+  "median_guard_gt_x0_50": -2.0614999999999997,
+  "original_rebound_survivors": 21,
+  "median_guard_rebound_survivors": 0,
+  "fresh_normal_gt_old_departures": 0,
+  "fresh_normal_gt_new_departures": 0,
+  "fresh_normal_gt_total": 40,
+  "fresh_normal_rc_old_departures": 14,
+  "fresh_normal_rc_median_guard_departures": 14,
+  "fresh_normal_rc_total": 120,
+  "fresh_rc_sweep_checks": [
+    {
+      "grid_index": 7,
+      "sigma": 0.32785964118919847,
+      "old_survivors": 30,
+      "median_only_survivors": 30,
+      "ensemble": 30
+    },
+    {
+      "grid_index": 16,
+      "sigma": 0.3802918949701297,
+      "old_survivors": 17,
+      "median_only_survivors": 17,
+      "ensemble": 30
+    },
+    {
+      "grid_index": 29,
+      "sigma": 0.4560273726536971,
+      "old_survivors": 15,
+      "median_only_survivors": 0,
+      "ensemble": 30
+    },
+    {
+      "grid_index": 30,
+      "sigma": 0.46185317862935615,
+      "old_survivors": 19,
+      "median_only_survivors": 0,
+      "ensemble": 30
+    },
+    {
+      "grid_index": 31,
+      "sigma": 0.46767898460501517,
+      "old_survivors": 22,
+      "median_only_survivors": 0,
+      "ensemble": 30
+    },
+    {
+      "grid_index": 32,
+      "sigma": 0.4735047905806742,
+      "old_survivors": 13,
+      "median_only_survivors": 0,
+      "ensemble": 30
+    }
+  ]
+}

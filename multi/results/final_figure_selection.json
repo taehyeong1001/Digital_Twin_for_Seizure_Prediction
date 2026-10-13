@@ -1,0 +1,18 @@
+{
+  "normal_gt_lam": -2.07,
+  "normal_scdt_lead": 0.6142152643249092,
+  "departure_gt_lam": -2.04,
+  "departure_scdt_lead": 0.5916311266808532,
+  "normal_gt_member": 28,
+  "normal_scdt_member": 25,
+  "departure_gt_member": 2,
+  "departure_scdt_member": 10,
+  "departure_gt_onset_s": 99.3125,
+  "departure_gt_first_node": 0,
+  "departure_scdt_onset_s": 101.78125,
+  "departure_scdt_first_node": 0,
+  "departure_scdt_departed_count": 16,
+  "departure_scdt_original_sweep_survivors": 14,
+  "normal_scdt_reconstructed_survivors": 23,
+  "normal_scdt_original_sweep_survivors": 23
+}

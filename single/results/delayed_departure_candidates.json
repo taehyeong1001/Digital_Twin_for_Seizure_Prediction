@@ -1,0 +1,86 @@
+[
+  {
+    "grid_index": 16,
+    "sigma": 0.3802918949701297,
+    "member": 14,
+    "first_trough_s": 130.34375,
+    "pre_trough_min": -0.4931381491491418,
+    "pre_trough_max": 2.9346304900878737,
+    "pre_trough_median": 0.5522109692588814,
+    "pre_trough_std": 0.33028768138112613,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  },
+  {
+    "grid_index": 16,
+    "sigma": 0.3802918949701297,
+    "member": 24,
+    "first_trough_s": 50.84375,
+    "pre_trough_min": -0.43781888210028663,
+    "pre_trough_max": 2.2134895625753623,
+    "pre_trough_median": 0.5271026238121238,
+    "pre_trough_std": 0.34234368565313317,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  },
+  {
+    "grid_index": 17,
+    "sigma": 0.3861177009457888,
+    "member": 0,
+    "first_trough_s": 29.5625,
+    "pre_trough_min": -0.45136228303872894,
+    "pre_trough_max": 3.3112788634152093,
+    "pre_trough_median": 0.5215296619668122,
+    "pre_trough_std": 0.603717000346315,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  },
+  {
+    "grid_index": 17,
+    "sigma": 0.3861177009457888,
+    "member": 5,
+    "first_trough_s": 128.96875,
+    "pre_trough_min": -0.4670452327062551,
+    "pre_trough_max": 3.495142323792603,
+    "pre_trough_median": 0.5304310772586456,
+    "pre_trough_std": 0.3282299455591947,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  },
+  {
+    "grid_index": 17,
+    "sigma": 0.3861177009457888,
+    "member": 9,
+    "first_trough_s": 93.3125,
+    "pre_trough_min": -0.4299515721475511,
+    "pre_trough_max": 2.816110943638953,
+    "pre_trough_median": 0.5451012899400547,
+    "pre_trough_std": 0.3207458373927843,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  },
+  {
+    "grid_index": 17,
+    "sigma": 0.3861177009457888,
+    "member": 12,
+    "first_trough_s": 137.59375,
+    "pre_trough_min": -0.45740871025425434,
+    "pre_trough_max": 2.861795834567868,
+    "pre_trough_median": 0.5264841358543156,
+    "pre_trough_std": 0.2506512526024622,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  },
+  {
+    "grid_index": 17,
+    "sigma": 0.3861177009457888,
+    "member": 16,
+    "first_trough_s": 51.53125,
+    "pre_trough_min": -0.4684205196921507,
+    "pre_trough_max": 0.9284447745146718,
+    "pre_trough_median": 0.5377985612204731,
+    "pre_trough_std": 0.14509021092736288,
+    "pre_trough_fraction_above_5": 0.0,
+    "event_under_current_rule": true
+  }
+]

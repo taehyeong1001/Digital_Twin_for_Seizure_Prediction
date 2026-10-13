@@ -1,0 +1,90 @@
+{
+  "statistics": {
+    "leading": "mean",
+    "second": "sigma",
+    "f_ratio": {
+      "mean": 12.155388939731171,
+      "sigma": 0.5858465438363686,
+      "ac1": 0.4645877171032525,
+      "ac8": 0.372038519378942,
+      "perm_entropy": 0.3795091937409658,
+      "q05": 10.003078085470515,
+      "iqr": 0.531649991729256,
+      "abs_corr": 0.1702555311112103
+    }
+  },
+  "path": {
+    "slope": -0.12918171474612097,
+    "intercept": 0.427562780533425,
+    "r2": 0.030179102591729845,
+    "drift_direction": -1.0
+  },
+  "alignment_validation_only": {
+    "lead_vs_lam": [
+      -0.765270106091656,
+      -0.9734606230827342,
+      0.9658366384241193
+    ],
+    "second_vs_lam": [
+      0.288873032692325,
+      0.9512006957107354,
+      0.373142272436788
+    ]
+  },
+  "locked_parameters": {
+    "n_reservoir": 1500,
+    "spectral_radius": 0.7216,
+    "leakage_rate": 0.020640000000000002,
+    "input_scaling": 0.02314,
+    "static_scaling": 0.004177,
+    "ridge": 0.4730999999999999,
+    "density": 0.003,
+    "innovation_scaling": 0.4712,
+    "block_s": 1.211,
+    "delta_mode": false,
+    "seed": 733900
+  },
+  "bo_iteration": 1,
+  "normal_validation": {
+    "score": 1.8149744792706446,
+    "stat_mae": 1.5343061783614247,
+    "response_slope": 0.7193316990907801,
+    "false_departure_rate": 0.0,
+    "clip_fraction": 0.0,
+    "teacher_rmse": 0.15283922281664142
+  },
+  "gt": {
+    "lam_50": -2.04375,
+    "lead_50_mapped": 0.590560156242088
+  },
+  "scdt_primary": {
+    "lead_50": 0.5921329964062766,
+    "lead_50_ci_low": 0.5906802156221561,
+    "lead_50_ci_high": 0.5938895404452588,
+    "aligned_lam_50_validation_only": -2.0458052745385826,
+    "second_50": 0.3510700246999035
+  },
+  "scdt_seeds": {
+    "733900": {
+      "lead_50": 0.5921329964062766,
+      "lead_50_ci_low": 0.5906802156221561,
+      "lead_50_ci_high": 0.5938895404452588,
+      "aligned_lam_50_validation_only": -2.0458052745385826,
+      "second_50": 0.3510700246999035
+    }
+  },
+  "scdt_seed_summary": {
+    "finite": 1,
+    "total": 1,
+    "min": 0.5921329964062766,
+    "max": 0.5921329964062766,
+    "mean": 0.5921329964062766,
+    "sd": NaN
+  },
+  "control_lead_50": NaN,
+  "lead_error_primary": 0.0015728401641885714,
+  "training_lead_range": [
+    0.6056350191871791,
+    0.6623220682572654
+  ]
+}

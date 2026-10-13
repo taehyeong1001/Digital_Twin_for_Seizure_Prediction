@@ -1,0 +1,21 @@
+{
+  "bo_iteration": 1,
+  "parameters": {
+    "n_reservoir": 1500,
+    "spectral_radius": 0.7216,
+    "leakage_rate": 0.020640000000000002,
+    "input_scaling": 0.02314,
+    "static_scaling": 0.004177,
+    "ridge": 0.4730999999999999,
+    "density": 0.003,
+    "innovation_scaling": 0.4712,
+    "block_s": 1.211,
+    "delta_mode": false,
+    "seed": 733900
+  },
+  "statistics": [
+    "mean",
+    "sigma"
+  ],
+  "locked_at": "2026-09-29 17:56:21"
+}

@@ -1,0 +1,159 @@
+{
+  "experiment": "strict single-node SCDT",
+  "separation_rules": {
+    "reservoir_inputs": [
+      "dynamic proxy x2-x1",
+      "measured sigma",
+      "measured permutation entropy"
+    ],
+    "x0_use": "synthetic data generation and validation-axis alignment only",
+    "training": "normal fixed-x0 records only; no postcritical/event trajectory",
+    "record_definition": "each 160 s fixed-x0 trajectory is one intact record; no window segmentation",
+    "hyperparameter_selection": "held-out normal statistic reproduction only",
+    "final_threshold_test": "executed after model locking",
+    "warmup": "last 20 s of training records only; no target GT warmup"
+  },
+  "event_rule": "proxy <= -0.5 after 5.0 s blanking OR 10 s rolling std below the normal-training minimum for 5 consecutive 1 s steps",
+  "morphology_reference": {
+    "features": [
+      "rolling_std"
+    ],
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "sustain_windows": 5,
+    "std_floor": 0.048630819552047705,
+    "training_min": 0.048630819552047705,
+    "training_q005": 0.06088920542628649,
+    "heldout_normal_gt_false_departure": 0.0
+  },
+  "training_x0_validation_only": [
+    -2.3,
+    -2.27,
+    -2.24,
+    -2.21,
+    -2.18,
+    -2.15
+  ],
+  "calibration_x0_validation_only": [
+    -2.3,
+    -2.26,
+    -2.22,
+    -2.18,
+    -2.14,
+    -2.1,
+    -2.08,
+    -2.07,
+    -2.065
+  ],
+  "normal_validation_x0_validation_only": [
+    -2.285,
+    -2.255,
+    -2.225,
+    -2.195,
+    -2.165,
+    -2.135
+  ],
+  "gt_test_x0": [
+    -2.08,
+    -2.079,
+    -2.078,
+    -2.077,
+    -2.076,
+    -2.075,
+    -2.074,
+    -2.073,
+    -2.072,
+    -2.071,
+    -2.07,
+    -2.069,
+    -2.068,
+    -2.067,
+    -2.066,
+    -2.065,
+    -2.064,
+    -2.063,
+    -2.062,
+    -2.061,
+    -2.06,
+    -2.059,
+    -2.058,
+    -2.057,
+    -2.056,
+    -2.055,
+    -2.054,
+    -2.053,
+    -2.052,
+    -2.051,
+    -2.05,
+    -2.049,
+    -2.048,
+    -2.047,
+    -2.046,
+    -2.045,
+    -2.044,
+    -2.043,
+    -2.042,
+    -2.041,
+    -2.04
+  ],
+  "statistical_path": {
+    "leading": "sigma",
+    "secondary": "permutation_entropy",
+    "slope": -0.2930634056991781,
+    "intercept": 1.0363655376905645,
+    "r2": 0.5761229932267762
+  },
+  "x0_sigma_alignment_validation_only": {
+    "slope": 0.32727081881079606,
+    "intercept": 1.0538548813544253,
+    "r2": 0.9218177800657225
+  },
+  "x0_pe_alignment_validation_only": {
+    "slope": -0.09965125099904315,
+    "intercept": 0.7206506832528728,
+    "r2": 0.7857977527004973
+  },
+  "best_rc_parameters": {
+    "n_reservoir": 280,
+    "spectral_radius": 0.77,
+    "leakage_rate": 0.28,
+    "input_scaling": 0.57,
+    "static_scaling": 0.13999999999999999,
+    "ridge": 0.0006000000000000003,
+    "density": 0.065,
+    "innovation_scaling": 0.9800000000000001,
+    "seed": 91017
+  },
+  "normal_validation": {
+    "scaled_statistic_mae": 1.239118171078476,
+    "false_departure_rate": 0.16666666666666666
+  },
+  "thresholds": {
+    "rc_sigma_50": 0.3802918949701297,
+    "rc_sigma_50_bootstrap_95_low": 0.3744660889944707,
+    "rc_sigma_50_bootstrap_95_high": 0.38684852749898524,
+    "rc_aligned_x0_50_validation_only": -2.058121126814243,
+    "gt_x0_50": -2.0614999999999997,
+    "gt_sigma_50": 0.37918608837596934,
+    "sigma_threshold_error": 0.0011058065941603745
+  },
+  "arguments": {
+    "out_dir": "..",
+    "duration_s": 160.0,
+    "warmup_s": 20.0,
+    "rollout_s": 140.0,
+    "stride": 8,
+    "training_replicates": 3,
+    "calibration_replicates": 5,
+    "gt_ensemble": 30,
+    "rc_ensemble": 30,
+    "reservoir_nodes": 280,
+    "bo_calls": 48,
+    "sweep_points": 35,
+    "fit_warmup": 160,
+    "reservoir_seed": 91017,
+    "seed": 20260924,
+    "warmup_samples": 640,
+    "validation_rollout_samples": 1920
+  }
+}

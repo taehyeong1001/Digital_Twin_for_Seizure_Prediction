@@ -1,0 +1,14 @@
+{
+  "normal_gt_x0": -2.22,
+  "normal_scdt_sigma": 0.32785964118919847,
+  "departure_gt_x0": -2.04,
+  "departure_scdt_sigma": 0.3861177009457887,
+  "normal_gt_member": 23,
+  "normal_scdt_member": 11,
+  "departure_gt_member": 1,
+  "departure_scdt_member": 9,
+  "departure_gt_first_trough_s": 67.71875,
+  "departure_scdt_first_trough_s": 93.3125,
+  "departure_scdt_delayed_over_10s_count": 5,
+  "departure_scdt_selection": "Among first-trough crossings at 25\u2013110 s, select the trace with most peaks above 1.2 and prominence 0.6 before crossing."
+}

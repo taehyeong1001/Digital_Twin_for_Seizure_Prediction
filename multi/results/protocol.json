@@ -1,0 +1,125 @@
+{
+  "experiment": "strict three-node SCDT",
+  "separation_rules": {
+    "reservoir_inputs": [
+      "three node proxies x2-x1",
+      "measured mean",
+      "measured sigma"
+    ],
+    "lam_use": "record generation and validation-axis alignment only",
+    "statistic_selection": "between/within-regime variance ratio on training records (regime membership only)",
+    "drift_direction": "sign of leading statistic over acquisition order",
+    "training": "event-free fixed-lam records only",
+    "hyperparameter_selection": "normal validation records only (statistic reproduction, response slope, false departure, clipping)",
+    "final_test": "sweep, control and GT boundary evaluated after locking",
+    "warmup": "20 s windows of the nearest training regime; no GT test signal"
+  },
+  "network": {
+    "nodes": 3,
+    "offsets": [
+      0.0,
+      -0.05,
+      -0.1
+    ],
+    "coupling": 0.7,
+    "connectivity": "triangle [1.0, 0.45, 0.70]"
+  },
+  "event_rule": "any node proxy <= -0.5 after 5.0 s blanking",
+  "lam": {
+    "training": [
+      -2.13,
+      -2.125,
+      -2.12,
+      -2.115,
+      -2.11,
+      -2.105,
+      -2.1,
+      -2.095,
+      -2.09,
+      -2.085,
+      -2.08,
+      -2.075,
+      -2.07
+    ],
+    "validation": [
+      -2.1225,
+      -2.1075,
+      -2.0925,
+      -2.0775
+    ],
+    "calibration": [
+      -2.14,
+      -2.1305,
+      -2.121,
+      -2.1115,
+      -2.102,
+      -2.0925,
+      -2.083,
+      -2.0735,
+      -2.064,
+      -2.0545,
+      -2.045
+    ],
+    "gt_boundary": [
+      -2.07,
+      -2.0675,
+      -2.065,
+      -2.0625,
+      -2.06,
+      -2.0575,
+      -2.055,
+      -2.0525,
+      -2.05,
+      -2.0475,
+      -2.045,
+      -2.0425,
+      -2.04,
+      -2.0375,
+      -2.035,
+      -2.0325,
+      -2.03,
+      -2.0275,
+      -2.025,
+      -2.0225,
+      -2.02,
+      -2.0175,
+      -2.015,
+      -2.0125,
+      -2.01,
+      -2.0075,
+      -2.005,
+      -2.0025,
+      -2.0,
+      -1.9975,
+      -1.995,
+      -1.9925,
+      -1.99
+    ],
+    "gt_preparation": -2.07
+  },
+  "durations_s": {
+    "record": 160.0,
+    "transient": 600.0,
+    "warmup": 20.0,
+    "rollout": 200.0,
+    "validation_rollout": 120.0
+  },
+  "bo_bounds": "sr .3-2.5, leak 10^[-2,-0.155], input 10^[-1.7,-0.1], static 10^[-2.5,-0.3], ridge 10^[-3,1.5], innovation 0-0.9, block 10^[-0.9,0.6] s, mode",
+  "arguments": {
+    "out_dir": ".",
+    "train_reps": 4,
+    "valid_reps": 2,
+    "calib_reps": 4,
+    "valid_rollouts": 4,
+    "gt_ensemble": 30,
+    "rc_ensemble": 30,
+    "reservoir_nodes": 1500,
+    "reservoir_repeats": 1,
+    "bo_calls": 40,
+    "bo_initial": 12,
+    "sweep_points": 36,
+    "extrapolation": 2.0,
+    "reservoir_seed": 733900,
+    "seed": 20260924
+  }
+}
