@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-10",
+  "purpose": "independently calibrate the coupled finite-horizon GT boundary before expanding stable SCDT training",
+  "old_locked_test_used": false,
+  "empirical_boundary_used_for_design": -2.0549999999999997,
+  "stable_margin_below_x50": 0.012,
+  "bo_trials": 100,
+  "reservoir_nodes": 1500,
+  "spectral_radius_range": [
+    0.3,
+    2.5
+  ],
+  "leakage_rate_range": [
+    0.01,
+    0.7
+  ],
+  "input": "three node signals plus nine fitted stable-trajectory statistics; no direct x0",
+  "event": "any node <= -0.5 after 5 s; sustained endpoint requires at least 5 s continuous low state",
+  "all_seed_families": {
+    "boundary": [
+      730100,
+      730101,
+      730102,
+      730103,
+      730104,
+      730105,
+      730106,
+      730107
+    ],
+    "training": 730302,
+    "event_training": [
+      730500,
+      730501,
+      730502
+    ],
+    "validation": [
+      730700,
+      730701,
+      730702,
+      730703
+    ],
+    "fresh_locked_test": [
+      731200,
+      731201,
+      731202,
+      731203,
+      731204,
+      731205,
+      731206,
+      731207
+    ]
+  }
+}

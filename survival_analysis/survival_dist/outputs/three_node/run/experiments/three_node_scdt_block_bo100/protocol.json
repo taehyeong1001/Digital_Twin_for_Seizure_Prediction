@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-12",
+  "bo_trials": 100,
+  "reservoir_nodes": 1500,
+  "spectral_radius_range": [
+    0.3,
+    2.5
+  ],
+  "leakage_rate_range": [
+    0.01,
+    0.7
+  ],
+  "innovation_scaling_range": [
+    0.2,
+    0.9
+  ],
+  "block_length_range_s": [
+    0.125,
+    4.0
+  ],
+  "block_pool": "stable training trajectories only",
+  "selection": "survival MAE, point event error, curve nonmonotonicity, normal morphology and spike rate",
+  "validation": {
+    "x0_range": [
+      -2.3,
+      -1.9
+    ],
+    "levels": 21,
+    "seeds": [
+      733100,
+      733101,
+      733102,
+      733103
+    ]
+  },
+  "fresh_test": {
+    "x0_range": [
+      -2.5,
+      -1.9
+    ],
+    "levels": 33,
+    "seeds": [
+      735100,
+      735101,
+      735102,
+      735103,
+      735104,
+      735105,
+      735106,
+      735107
+    ]
+  }
+}

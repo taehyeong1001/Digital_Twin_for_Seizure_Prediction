@@ -1,0 +1,18 @@
+PASS	KM matches sksurv	max|d|=0.00e+00
+PASS	Greenwood log-log band matches sksurv	max|d|=1.11e-16
+PASS	S_KM(H) == survival_at_horizon == original grouped_survival	
+PASS	Jeffreys interval endpoints / quantiles	
+PASS	Jeffreys coverage ~ 95 %	coverage=0.944
+PASS	exponential escape-rate MLE recovers kappa	kappa=0.0154 [0.0149,0.0159]
+PASS	Murphy identity exact on distinct forecasts	residual=-5.6e-17
+PASS	BSS(climatology) == 0	
+PASS	reliable forecast stays inside consistency bars	3/4 bins
+PASS	BS(t) matches sksurv (G from same set)	max|d|=0.0e+00
+PASS	IBS matches sksurv	0.212853 vs 0.212853
+PASS	D-calibration accepts the true model	p=0.143
+PASS	D-calibration rejects a 2x-hazard model	p=0.0e+00
+PASS	logistic dose-response fit recovers (x50, s)	x50=-2.0786 s=0.0201
+PASS	bootstrap x50 interval covers the truth	[-2.0808,-2.0761]
+PASS	CRPS sorted identity == brute force	
+PASS	total = aleatoric + epistemic (exact)	
+PASS	replicate-noise correction removes spurious epistemic variance	raw=0.0088 corrected=-0.0008

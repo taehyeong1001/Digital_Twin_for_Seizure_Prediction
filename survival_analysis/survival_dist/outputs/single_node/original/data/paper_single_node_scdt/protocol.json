@@ -1,0 +1,160 @@
+{
+  "experiment": "SCDT-style long-trajectory statistical coordinate",
+  "clinical_short_window_claim": false,
+  "training_x0": [
+    -2.3,
+    -2.27,
+    -2.24,
+    -2.21,
+    -2.18,
+    -2.15
+  ],
+  "validation_x0": [
+    -2.255,
+    -2.195,
+    -2.125,
+    -2.085,
+    -2.065,
+    -2.045,
+    -2.025,
+    -1.985
+  ],
+  "representative_roles": {
+    "inter": -2.2125,
+    "pre": -2.1125,
+    "post": -2.0375
+  },
+  "selected_features": [
+    "permutation_entropy",
+    "std"
+  ],
+  "feature_coefficients": [
+    [
+      -0.1152174710946129,
+      0.6828237680870376
+    ],
+    [
+      0.3368493451755738,
+      1.0810219567733867
+    ]
+  ],
+  "observed_training_static": [
+    [
+      0.9490163576640501,
+      0.29636085773218407
+    ],
+    [
+      0.942417286316692,
+      0.3295033340182302
+    ],
+    [
+      0.9423125351225666,
+      0.32456014675397993
+    ],
+    [
+      0.9356874947787936,
+      0.3395604363729727
+    ],
+    [
+      0.9351652629006353,
+      0.34351761240713374
+    ],
+    [
+      0.9304969108525704,
+      0.35569059526191316
+    ]
+  ],
+  "fitted_training_static": [
+    [
+      0.9478239516046473,
+      0.3062684628695671
+    ],
+    [
+      0.9443674274718089,
+      0.31637394322483425
+    ],
+    [
+      0.9409109033389705,
+      0.3264794235801014
+    ],
+    [
+      0.9374543792061321,
+      0.33658490393536866
+    ],
+    [
+      0.9339978550732937,
+      0.3466903842906358
+    ],
+    [
+      0.9305413309404553,
+      0.35679586464590307
+    ]
+  ],
+  "dynamic_center": 0.7281752260639976,
+  "dynamic_scale": 0.3092392906670918,
+  "static_center": [
+    0.9391826412725512,
+    0.33153216375773503
+  ],
+  "static_scale": [
+    0.005903138768424374,
+    0.01725839327779914
+  ],
+  "best_rc_parameters": {
+    "n_reservoir": 280,
+    "spectral_radius": 0.5373392938351876,
+    "leakage_rate": 0.31624029925124947,
+    "input_scaling": 0.4085590347634386,
+    "static_scaling": 0.12906064049344296,
+    "ridge": 0.0002565109446326979,
+    "density": 0.0696538220814561,
+    "innovation_scaling": 0.9907324686179712,
+    "seed": 160851
+  },
+  "best_validation_metrics": {
+    "iteration": 21,
+    "score": 1.9765293589567272,
+    "survival_mae": 0.125,
+    "false_collapse": 0.0,
+    "missed_collapse": 0.125,
+    "monotonic_penalty": 0.0,
+    "short_nrmse": 1.610403266653927,
+    "distribution_error": 0.21122440655212973,
+    "n_reservoir": 280,
+    "spectral_radius": 0.5373392938351876,
+    "leakage_rate": 0.31624029925124947,
+    "input_scaling": 0.4085590347634386,
+    "static_scaling": 0.12906064049344296,
+    "ridge": 0.0002565109446326979,
+    "density": 0.0696538220814561,
+    "innovation_scaling": 0.9907324686179712,
+    "seed": 160851
+  },
+  "test_survival_mae": 0.07692307692307693,
+  "arguments": {
+    "out_dir": "../../survival_dist/outputs/single_node/original",
+    "long_trajectory_s": 160.0,
+    "warmup_s": 20.0,
+    "rollout_s": 140.0,
+    "rc_stride": 8,
+    "feature_seeds": 5,
+    "train_seeds": 1,
+    "validation_seeds": 4,
+    "survival_seeds": 10,
+    "static_dim": 2,
+    "correlation_limit": 0.9,
+    "fit_warmup": 160,
+    "ramp_steps": 0,
+    "reservoir_nodes": 280,
+    "bo_calls": 24,
+    "survival_x0": 26,
+    "x0_min": -2.2925,
+    "x0_max": -1.9275,
+    "base_x0": -2.18,
+    "seed": 120831,
+    "feature_seed_base": 220831,
+    "train_seed_base": 320831,
+    "validation_seed_base": 420831,
+    "test_seed_base": 520831
+  }
+}
